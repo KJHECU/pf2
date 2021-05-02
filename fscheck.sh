@@ -11,7 +11,7 @@ getprop()
     size=$(wc -c "$1" | awk '{print $1}')
 
     #get the last datetime the file was modified
-    lst_mod=$(date -r $1 "+%m-%d-%Y %H:%M:%S")
+    lst_mod=$(date -r $1 "+%d-%m-%Y %H:%M:%S")
 
     #echo the required output to the terminal
     echo -e "The file $1 contains $w_count words and is $size \bK in size and was last modified $lst_mod"
